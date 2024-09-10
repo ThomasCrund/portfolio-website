@@ -11,7 +11,7 @@ export default function Home() {
       <div className="bg-dark w-72 mb-5 md:mb-0 flex p-2 px-4 justify-between rounded-lg">
           <p className="text-slate-50 cursor-pointer" onClick={() => router.push('/')}><u>About</u></p>
           <p className="text-slate-50 cursor-pointer" onClick={() => router.push('/projects')}>Projects</p>
-          <p className="text-slate-50 cursor-pointer">Experience</p>
+          <p className="text-slate-50 cursor-pointer" onClick={() => router.push('/experience')}>Experience</p>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ export default function Home() {
       <div className="self-center max-w-2xl w-full bg-light-green p-6 rounded-xl flex-col items-center flex-wrap">
         <h1 className="float-center text-white text-xl text-center mb-4"><strong>Featured Projects</strong></h1>
         <div className="flex flex-wrap flex-row w-full gap-4 justify-center">
-          <div className="w-full sm:w-[12rem] bg-current rounded-xl p-2 flex-col overflow-hidden cursor-pointer">
+          <div className="w-full sm:w-[12rem] bg-current rounded-xl p-2 flex-col overflow-hidden cursor-pointer" onClick={() => router.push('/projects/lighting')}>
             <h1 className="text-center text-white">Custom Lighting Desk</h1>
             <div className="w-full aspect-[4/3] relative">
               <Image 
@@ -39,26 +39,26 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="w-full sm:w-[12rem] bg-current rounded-xl p-2 flex-col overflow-hidden cursor-pointer">
+          <div className="w-full sm:w-[12rem] bg-current rounded-xl p-2 flex-col overflow-hidden cursor-pointer" onClick={() => router.push('/projects/sound-desk')}>
             <h1 className="text-center text-white">Mixing Desk Interface</h1>
             <div className="w-full aspect-[4/3] relative">
-              <Image 
+              {/* <Image 
                 src="/lighting_desk/lighting_cover.jpg"
                 alt="Test"
                 fill
                 className="w-full"
-              />
+              /> */}
             </div>
           </div>
-          <div className="w-full sm:w-[12rem] bg-current rounded-xl p-2 flex-col overflow-hidden cursor-pointer">
+          <div className="w-full sm:w-[12rem] bg-current rounded-xl p-2 flex-col overflow-hidden cursor-pointer" onClick={() => router.push('/projects/script-scroll')}>
             <h1 className="text-center text-white">Script Scroll</h1>
             <div className="w-full aspect-[4/3] relative">
-              <Image 
+              {/* <Image 
                 src="/lighting_desk/lighting_cover.jpg"
                 alt="Test"
                 fill
                 className="w-full"
-              />
+              /> */}
             </div>
           </div>
         </div>

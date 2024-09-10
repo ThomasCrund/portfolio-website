@@ -12,10 +12,10 @@ export default function Home() {
         <div className="size-10 bg-gray-400 rounded-full"></div>
         <strong className="text-2xl sm:text-4xl text-current ml-4">Thomas Crundwell</strong>
        </div>
-        <div className="bg-dark w-72 mb-5 md:mb-0 flex p-2 px-4 justify-between rounded-lg">
+       <div className="bg-dark w-72 mb-5 md:mb-0 flex p-2 px-4 justify-between rounded-lg">
           <p className="text-slate-50 cursor-pointer" onClick={() => router.push('/')}>About</p>
-          <p className="text-slate-50 cursor-pointer"><u>Projects</u></p>
-          <p className="text-slate-50 cursor-pointer">Experience</p>
+          <p className="text-slate-50 cursor-pointer" onClick={() => router.push('/projects')}><u>Projects</u></p>
+          <p className="text-slate-50 cursor-pointer" onClick={() => router.push('/experience')}>Experience</p>
         </div>
       </div>
 
@@ -50,7 +50,8 @@ export default function Home() {
                 </div>
             </div>
       </div>
-      <div className="self-start max-w-3xl w-xs bg-current overflow-hidden w-full min-h-20 rounded-xl flex flex-row items-center flex-wrap sm:flex-nowrap cursor-pointer">
+      <div className="self-start max-w-3xl w-xs bg-current overflow-hidden w-full min-h-20 rounded-xl flex flex-row items-center flex-wrap sm:flex-nowrap cursor-pointer"
+      onClick={() => router.push('/projects/sound-desk')}>
             <div className="min-h-48 aspect-[4/3] relative grow">
                 <Image 
                     src="/lighting_desk/lighting_cover.jpg"
@@ -72,7 +73,8 @@ export default function Home() {
                 </div>
             </div>
       </div>
-      <div className="self-start max-w-3xl w-xs bg-current overflow-hidden w-full min-h-20 rounded-xl flex flex-row items-center flex-wrap sm:flex-nowrap cursor-pointer">
+      <div className="self-start max-w-3xl w-xs bg-current overflow-hidden w-full min-h-20 rounded-xl flex flex-row items-center flex-wrap sm:flex-nowrap cursor-pointer"
+      onClick={() => router.push('/projects/script-scroll')}>
             <div className="min-h-48 aspect-[4/3] relative grow">
                 <Image 
                     src="/lighting_desk/lighting_cover.jpg"
