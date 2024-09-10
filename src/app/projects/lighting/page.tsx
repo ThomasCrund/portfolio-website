@@ -60,7 +60,7 @@ export default function Home() {
 
       <div> {/* Background */}
         <h3>Background</h3>
-        <p>I made this custom lighting desk after I had recently decided that buying a lighting desk for my college's amature production was too expensive,
+        <p>I made this custom lighting desk after I had recently decided that buying a lighting desk for my college&apos;s amature production was too expensive,
           I decided to instead use some open source software that could control the desk called <a href="https://qlcplus.org/">QLC+</a> but I still wanted
           to be able to use physical controls, I though I could create a lighting desk using analog inputs and a raspberry pi for less than $100 and thus
           this custom lighting desk came about.</p>
